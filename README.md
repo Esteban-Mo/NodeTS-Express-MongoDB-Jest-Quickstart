@@ -48,7 +48,7 @@ This is a quickstart project for creating a RESTful API using Node.js, Express, 
     npm run start
     ```
 
-The server runs on port 3000 by default. You can change this by setting the PORT variable in your .env file.
+The server runs on port 3001 by default. You can change this by setting the PORT variable in your .env file.
 
 ## Features ✨
 
