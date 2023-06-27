@@ -37,12 +37,16 @@ This is a quickstart project for creating a RESTful API using Node.js, Express, 
 
 2. Install the dependencies. ⚙️
 
+    ```
     npm install
+    ```
 
 3. Copy .env.example to .env and replace the variables with your own values. ⚙️
 4. Start the server. 🏃‍♂️
-
+   
+    ```
     npm run start
+    ```
 
 The server runs on port 3000 by default. You can change this by setting the PORT variable in your .env file.
 
