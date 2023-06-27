@@ -1,4 +1,4 @@
-# 🚀 Node TypeScript API Quickstart
+# 🚀 Node TypeScript MongoDB API Quickstart
 
 This is a quickstart project for creating a RESTful API using Node.js, Express, and TypeScript, with MongoDB as the database. ✨
 
@@ -33,18 +33,22 @@ This is a quickstart project for creating a RESTful API using Node.js, Express, 
 
 1. Clone this repository. 🔄
 
-   git clone https://github.com/username/repository.git
+   git clone [https://github.com/username/repository.git](https://github.com/Esteban-Mo/NodeTS-MongoDB-Quickstart.git)
 
 2. Install the dependencies. ⚙️
 
+    ```
     npm install
+    ```
 
 3. Copy .env.example to .env and replace the variables with your own values. ⚙️
 4. Start the server. 🏃‍♂️
-
+   
+    ```
     npm run start
+    ```
 
-The server runs on port 3000 by default. You can change this by setting the PORT variable in your .env file.
+The server runs on port 3001 by default. You can change this by setting the PORT variable in your .env file.
 
 ## Features ✨
 
