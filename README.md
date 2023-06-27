@@ -1,4 +1,4 @@
-# 🚀 Node TypeScript API Quickstart
+# 🚀 Node TypeScript MongoDB API Quickstart
 
 This is a quickstart project for creating a RESTful API using Node.js, Express, and TypeScript, with MongoDB as the database. ✨
 
