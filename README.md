@@ -33,7 +33,7 @@ This is a quickstart project for creating a RESTful API using Node.js, Express, 
 
 1. Clone this repository. 🔄
 
-   git clone https://github.com/username/repository.git
+   git clone [https://github.com/username/repository.git](https://github.com/Esteban-Mo/NodeTS-MongoDB-Quickstart.git)
 
 2. Install the dependencies. ⚙️
 
