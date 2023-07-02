@@ -19,6 +19,12 @@ const accountSchema = new Schema<Account>({
     },
 }, {
     timestamps: true,
+    toJSON: {
+        transform: function (doc, ret) {
+            delete ret.password;
+            return ret;
+        }
+    }
 });
 
 export default model<Account>('Account', accountSchema);

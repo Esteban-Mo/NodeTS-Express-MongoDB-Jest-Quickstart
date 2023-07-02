@@ -3,11 +3,14 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const successMessage = 'Connected to MongoDB successfully.';
+const errorMessage = 'Could not connect to MongoDB.';
+
 const connectDB = (): void => {
     mongoose
-    .connect(process.env.MONGODB_URI || '<your-mongodb-connection-string>')
-    .then(() => console.log('Connected to MongoDB successfully.'))
-    .catch((error: Error) => console.error(`Could not connect to MongoDB. ERROR: ${error}`));
+    .connect(process.env.MONGODB_URI || '')
+    .then(() => console.log(successMessage))
+    .catch((error: Error) => console.error(errorMessage +  ` ${error}`));
 }
 
 export default connectDB;
