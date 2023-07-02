@@ -1,48 +1,59 @@
-# 🚀 Node TypeScript MongoDB API Quickstart
+# :rocket: Node TypeScript MongoDB API Quickstart with Account Management, bcrypt & Jest Unit Testing
 
-This is a quickstart project for creating a RESTful API using Node.js, Express, and TypeScript, with MongoDB as the database. ✨
+This is a comprehensive quickstart project for creating a RESTful API using Node.js, Express, and TypeScript, with MongoDB as the database. It incorporates a complete management system for user accounts, offering a full CRUD (Create, Read, Update, Delete) interface. In order to ensure quality and reliability, unit tests have been established for every part of the account management system. This well-structured, easy-to-adapt project is an excellent starting point for developing robust, high-quality APIs. :sparkles:
 
-## Project Structure 📁
+## Project Structure :file_folder:
 
 ```
 /
 ├── src/
 │ ├── config/
-│ │ ├── database.ts     # MongoDB connection setup
-│ ├── controllers/      # Route controllers (controller layer)
-│ ├── interfaces/       # Interface definitions for models
-│ ├── models/           # Database models
-│ ├── routes/           # Routes
-│ ├── services/         # Business logic (service layer)
-│ └── index.ts          # Express app
-├── test/               # Test files
-├── .env                # Environment variables
-├── .gitignore          # Ignore node modules, env, dist
-├── package.json        # Dependencies and scripts
-├── tsconfig.json       # TypeScript config
-└── README.md
+│ │ ├── database.ts     	# MongoDB connection setup
+│ ├── controllers/      	# Route controllers (controller layer)
+│ ├── interfaces/       	# Interface definitions for models
+│ ├── models/           	# Database models
+│ ├── routes/           	# Routes definitions
+│ ├── services/         	# Business logic (service layer)
+│ ├── utils/            	# Utility functions/classes
+│ │ ├── __tests__/      	# Unit tests
+│ │ │ ├── controllers/  	# Unit tests for controllers
+│ └── index.ts          	# Express app
+├── .env                	# Environment variables
+├── .gitignore          	# Specifies intentionally untracked files to ignore
+├── package.json        	# Defines scripts, dependencies and project metadata
+├── tsconfig.json       	# TypeScript configuration
+└── README.md           	# Project description and setup guide
 ```
 
-## Prerequisites 📋
+## Prerequisites :clipboard:
 
 - Node.js >=14.x
 - MongoDB
-- A package manager (npm, yarn)
+- A package manager (npm)
 
-## Getting Started 🚀
+## Getting Started :rocket:
 
-1. Clone this repository. 🔄
+1. Clone this repository. :arrows_counterclockwise:
 
-   git clone [https://github.com/username/repository.git](https://github.com/Esteban-Mo/NodeTS-MongoDB-Quickstart.git)
+   git clone [https://github.com/Esteban-Mo/repository.git](https://github.com/Esteban-Mo/NodeTS-MongoDB-Quickstart.git)
 
-2. Install the dependencies. ⚙️
+2. Install the dependencies. :gear:
 
     ```
     npm install
     ```
 
-3. Copy .env.example to .env and replace the variables with your own values. ⚙️
-4. Start the server. 🏃‍♂️
+3. Copy this to .env and replace the variables with your own values. :gear:
+
+	```graphql
+	# The port your server will run on
+	PORT=3001
+
+	# The URI for your MongoDB database. Replace with your own URI.
+	MONGODB_URI=URL
+	```
+
+4. Start the server. :gear:
    
     ```
     npm run start
@@ -50,44 +61,46 @@ This is a quickstart project for creating a RESTful API using Node.js, Express, 
 
 The server runs on port 3001 by default. You can change this by setting the PORT variable in your .env file.
 
-## Features ✨
+## Features :sparkles:
 
     - MVC architecture
     - Database connection with MongoDB using Mongoose
     - Environment variables with dotenv
     - TypeScript support
     - Error handling
+    - Bcrypt
+    - Testing setup with Jest
 
-## Scripts 📜
+## Scripts :scroll:
 
     - npm run start - Start the server
     - npm run dev - Start the server in development mode with hot-reloading
     - npm run build - Compile TypeScript to JavaScript
     - npm test - Run tests
 
-## API Endpoints 📡
+## API Endpoints :satellite:
 
 This quickstart comes with a set of predefined routes. You can modify, remove, or add to these as needed.
 
     GET / - Returns a welcome message
 
-## Testing 🧪
-You can add your test files to the test/ directory. To run the tests, use the npm test command.
+## Testing :syringe:
+You can add your test files to the `src/utils/__tests__/` directory. To run the tests, use the npm test command.
 
-## Contributing 🤝
+## Contributing :handshake:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License 📄
+## License :page_facing_up:
 This project is licensed under the MIT License.
 
-## Contact ✉️
-If you have any questions or feedback, feel free to open a new issue.
+## Contact :envelope:
+If you have any questions or feedback, feel free to open a new issue. [here](https://github.com/Esteban-Mo/NodeTS-MongoDB-Quickstart/issues)
 
-## Acknowledgements 🙏
+## Acknowledgements :pray:
 
     - Node.js
     - Express.js
     - TypeScript
     - MongoDB
-
-Remember to replace username and repository with your GitHub username and the name of your repository. The "Contact" section should include a link to the issue tracker for your specific repository. This README assumes a certain project structure and may need to be adjusted based on your specific use case. 😉
+    - Jest
+    - Bcrypt
