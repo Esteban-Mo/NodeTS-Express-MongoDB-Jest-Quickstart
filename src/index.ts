@@ -1,6 +1,7 @@
 import express, {Express, Request, Response} from 'express';
 import connectDB from './config/database';
 import accountRoutes from './routes/accountRoutes';
+import authRoutes from './routes/authRoutes';
 import errorHandler from './middlewares/errorHandler';
 
 const app: Express = express();
@@ -10,6 +11,7 @@ app.use(express.json());
 connectDB();
 
 app.use('/account', accountRoutes);
+app.use('/auth', authRoutes);
 
 app.get('/', (req: Request, res: Response): void => {
     res.json({
